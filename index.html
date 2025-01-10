@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRT Terminal</title>
+    <link rel="stylesheet" href="terminal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="crt">
+        <div class="scanline"></div>
+    </div>
+    <div class="terminal-container">
+        <div class="ascii-header ascii-art" data-text=""></div>
+        <div class="terminal">
+            <div id="output"></div>
+            <div class="input-line">
+                <span class="prompt">></span>
+                <input type="text" id="terminal-input" autofocus>
+            </div>
+        </div>
+    </div>
+    <script src="terminal.js"></script>
+</body>
+</html>
